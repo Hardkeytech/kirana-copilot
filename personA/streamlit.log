@@ -1,0 +1,26 @@
+2026-09-30 20:58:00.284 Uvicorn server started on :::8501
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.29.80:8501
+  External URL: http://49.37.214.188:8501
+
+Task exception was never retrieved
+future: <Task finished name='Task-104' coro=<IocpProactor.accept.<locals>.accept_coro() done, defined at C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py:564> exception=OSError(22, 'The specified network name is no longer available', None, 64, None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 567, in accept_coro
+    await future
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 807, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\windows_events.py", line 556, in finish_accept
+    ov.getresult()
+    ~~~~~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available
+Accept failed on a socket
+socket: <asyncio.TransportSocket fd=1256, family=23, type=1, proto=0, laddr=('::', 8501, 0, 0)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 844, in loop
+    conn, addr = f.result()
+                 ~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available

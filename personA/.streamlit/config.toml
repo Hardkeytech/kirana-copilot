@@ -1,0 +1,8 @@
+# Force the WhatsApp-light look regardless of the user's system theme,
+# so bubble text is always readable (dark mode made it white-on-white).
+[theme]
+base = "light"
+primaryColor = "#075E54"
+backgroundColor = "#ECE5DD"          # WhatsApp chat beige
+secondaryBackgroundColor = "#FFFFFF" # sidebar, buttons, inputs
+textColor = "#111b21"
